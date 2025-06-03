@@ -172,3 +172,6 @@ def delete_transaction(transaction_id: int, db: Session = Depends(get_db), curre
     db.delete(transaction)
     db.commit()
     return {"msg": "Transacción eliminada"}
+
+app = FastAPI()
+
